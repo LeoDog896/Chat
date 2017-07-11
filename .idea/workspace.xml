@@ -13,6 +13,15 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Chat/config.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Chat/me/tekoh/chat/API/ClearChat.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Chat/me/tekoh/chat/API/MuteChat.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Chat/me/tekoh/chat/Commands/ClearChatCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Chat/me/tekoh/chat/Commands/MuteChatCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Chat/me/tekoh/chat/Core.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Chat/me/tekoh/chat/Listeners/PlayerTalk.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Chat/permissions.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Chat/plugin.yml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
