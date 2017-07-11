@@ -2,4 +2,5 @@ chat.mutechat.bypass // Bypass the muted chat.
 chat.mutechat.toggle // Turn the mutechat on/off.
 
 chat.clearchat.global // Clear the global chat.
-chat.clearchat.bypass // Bypasses the global clearchat
+chat.clearchat.bypass // Bypasses the global clearchat.
+chat.clearchat.personal // Clear a player's chat.
