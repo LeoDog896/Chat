@@ -1,12 +1,9 @@
 messages:
     prefix: '&a!&8>' #You can use this message in any other with %prefix%
     noperms: '%prefix% &cYou do not have permission to do this.' #This is the message used when a player uses a command they do not have access to.
-    toomanyargs: '%prefix% &cError: Too many arguments.' #This message is used when a player types in too many arguments for a command.
-    done: '%prefix% &aDone' #This is the message used when something has been "done"
 
     clearchat:
         clearline: '&8&m=====&a%player% &7cleared the chat&8&m====='
-        clearlineplayer: '&8&m=====&a%player% &7cleared your chat&8&m====='
 
     mutechat:
         chatismuted: '%prefix% &7Chat is currently &amuted&7!' #This is the message used when a player tries to type when the chat is muted.

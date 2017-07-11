@@ -1,3 +1,2 @@
-*.xml
-Chat/
-*.xml
+out/
+.idea/

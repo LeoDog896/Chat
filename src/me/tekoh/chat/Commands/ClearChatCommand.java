@@ -18,6 +18,13 @@ public class ClearChatCommand implements CommandExecutor {
         pl = instance;
     }
 
+    private String name(CommandSender sender) {
+        if (!(sender instanceof Player)) {
+            return "CONSOLE";
+        }
+        return ((Player) sender).getName();
+    }
+
     public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args) {
 
         if (cmd.getName().equalsIgnoreCase("clearchat")) {
@@ -27,26 +34,7 @@ public class ClearChatCommand implements CommandExecutor {
                     return true;
                 }
                 pl.clearChat.clearChat();
-                Bukkit.getServer().broadcastMessage(pl.getMessage("messages.clearchat.clearline").replaceAll("%player%", sender.getName()));
-                return true;
-            }
-            if (args.length > 1) {
-                sender.sendMessage(pl.getMessage("messages.toomanyargs"));
-                return true;
-            }
-            if (args.length == 1) {
-                if (!sender.hasPermission("chat.clearchat.personal")) {
-                    sender.sendMessage(pl.getMessage("messages.noperms"));
-                    return true;
-                }
-                Player target = Bukkit.getPlayer(args[0]);
-                if (target == null) {
-                    sender.sendMessage("§cError: Null target.");
-                    return true;
-                }
-                pl.clearChat.clearChatPersonal(target);
-                target.sendMessage(pl.getMessage("messages.clearchat.clearlineplayer").replaceAll("%player%", sender.getName()));
-                sender.sendMessage(pl.getMessage("messages.done"));
+                Bukkit.getServer().broadcastMessage(pl.getMessage("messages.clearchat.clearline").replaceAll("%player%", name(sender)));
                 return true;
             }
         }
