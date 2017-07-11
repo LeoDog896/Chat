@@ -6,7 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89060454-8907-4189-8ee7-6bc77da9e6d1" name="Default" comment="" />
+    <list default="true" id="89060454-8907-4189-8ee7-6bc77da9e6d1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/me/tekoh/chat/Commands/ClearChatCommand.java" afterPath="$PROJECT_DIR$/src/me/tekoh/chat/Commands/ClearChatCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/permissions.txt" afterPath="$PROJECT_DIR$/src/permissions.txt" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,25 +46,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClearChatCommand.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ClearChatCommand.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/me/tekoh/chat/Commands/ClearChatCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="33" column="32" lean-forward="true" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+            <state relative-caret-position="705">
+              <caret line="49" column="28" lean-forward="true" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#412#413#0" expanded="true" />
-                <element signature="e#441#442#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClearChat.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/me/tekoh/chat/API/ClearChat.java">
+      <file leaf-file-name="MuteChatCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/me/tekoh/chat/Commands/MuteChatCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="32" column="29" lean-forward="false" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+            <state relative-caret-position="567">
+              <caret line="34" column="65" lean-forward="false" selection-start-line="34" selection-start-column="65" selection-end-line="34" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,9 +83,16 @@
       <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="145" lean-forward="false" selection-start-line="10" selection-start-column="145" selection-end-line="10" selection-end-column="145" />
-              <folding />
+            <state relative-caret-position="69">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding>
+                <marker date="1499767868423" expanded="true" signature="0:689" ph="messages: &lt;6 keys&gt;" />
+                <marker date="1499767868423" expanded="true" signature="301:316" ph="&amp;8&amp;m=====…t&amp;8&amp;m=====" />
+                <marker date="1499767868423" expanded="true" signature="322:689" ph="mutechat: &lt;3 keys&gt;" />
+                <marker date="1499767868423" expanded="true" signature="353:394" ph="%prefix% …&amp;amuted&amp;7!" />
+                <marker date="1499767868423" expanded="true" signature="496:537" ph="%prefix% …&amp;amuted&amp;7!" />
+                <marker date="1499767868423" expanded="true" signature="654:689" ph="%prefix% …&amp;amuted&amp;7!" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,8 +100,8 @@
       <file leaf-file-name="permissions.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/permissions.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="54" lean-forward="false" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
+            <state relative-caret-position="115">
+              <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -121,11 +131,11 @@
         <option value="$PROJECT_DIR$/src/me/tekoh/chat/Listeners/PlayerTalk.java" />
         <option value="$PROJECT_DIR$/src/me/tekoh/chat/Commands/MuteChatCommand.java" />
         <option value="$PROJECT_DIR$/src/plugin.yml" />
-        <option value="$PROJECT_DIR$/src/me/tekoh/chat/Commands/ClearChatCommand.java" />
         <option value="$PROJECT_DIR$/src/me/tekoh/chat/Core.java" />
         <option value="$PROJECT_DIR$/src/config.yml" />
-        <option value="$PROJECT_DIR$/src/permissions.txt" />
         <option value="$PROJECT_DIR$/src/me/tekoh/chat/API/ClearChat.java" />
+        <option value="$PROJECT_DIR$/src/permissions.txt" />
+        <option value="$PROJECT_DIR$/src/me/tekoh/chat/Commands/ClearChatCommand.java" />
       </list>
     </option>
   </component>
@@ -498,6 +508,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="89060454-8907-4189-8ee7-6bc77da9e6d1" name="Default" comment="" />
@@ -612,14 +625,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/tekoh/chat/Commands/ClearChatCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/me/tekoh/chat/API/ClearChat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="33" column="32" lean-forward="true" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+        <state relative-caret-position="690">
+          <caret line="32" column="29" lean-forward="false" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#441#442#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/permissions.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="55" lean-forward="false" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <marker date="1499767868423" expanded="true" signature="0:689" ph="messages: &lt;6 keys&gt;" />
+            <marker date="1499767868423" expanded="true" signature="301:316" ph="&amp;8&amp;m=====…t&amp;8&amp;m=====" />
+            <marker date="1499767868423" expanded="true" signature="322:689" ph="mutechat: &lt;3 keys&gt;" />
+            <marker date="1499767868423" expanded="true" signature="353:394" ph="%prefix% …&amp;amuted&amp;7!" />
+            <marker date="1499767868423" expanded="true" signature="496:537" ph="%prefix% …&amp;amuted&amp;7!" />
+            <marker date="1499767868423" expanded="true" signature="654:689" ph="%prefix% …&amp;amuted&amp;7!" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/tekoh/chat/Commands/ClearChatCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="29" column="137" lean-forward="false" selection-start-line="29" selection-start-column="137" selection-end-line="29" selection-end-column="137" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/tekoh/chat/API/MuteChat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/tekoh/chat/Listeners/PlayerTalk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="25" column="71" lean-forward="false" selection-start-line="25" selection-start-column="71" selection-end-line="25" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/tekoh/chat/Core.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#745#746#0" expanded="true" />
+            <element signature="e#800#801#0" expanded="true" />
+            <element signature="e#1297#1298#0" expanded="true" />
+            <element signature="e#1336#1337#0" expanded="true" />
+            <element signature="e#1386#1387#0" expanded="true" />
+            <element signature="e#1465#1466#0" expanded="true" />
+            <element signature="e#1830#1831#0" expanded="true" />
+            <element signature="e#1883#1884#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -634,17 +718,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="145" lean-forward="false" selection-start-line="10" selection-start-column="145" selection-end-line="10" selection-end-column="145" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/permissions.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="54" lean-forward="false" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
-          <folding />
+        <state relative-caret-position="69">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <marker date="1499767868423" expanded="true" signature="0:689" ph="messages: &lt;6 keys&gt;" />
+            <marker date="1499767868423" expanded="true" signature="301:316" ph="&amp;8&amp;m=====…t&amp;8&amp;m=====" />
+            <marker date="1499767868423" expanded="true" signature="322:689" ph="mutechat: &lt;3 keys&gt;" />
+            <marker date="1499767868423" expanded="true" signature="353:394" ph="%prefix% …&amp;amuted&amp;7!" />
+            <marker date="1499767868423" expanded="true" signature="496:537" ph="%prefix% …&amp;amuted&amp;7!" />
+            <marker date="1499767868423" expanded="true" signature="654:689" ph="%prefix% …&amp;amuted&amp;7!" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -652,6 +735,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
           <caret line="32" column="29" lean-forward="false" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/permissions.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/tekoh/chat/Commands/MuteChatCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="34" column="65" lean-forward="false" selection-start-line="34" selection-start-column="65" selection-end-line="34" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/tekoh/chat/Commands/ClearChatCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="49" column="28" lean-forward="true" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
