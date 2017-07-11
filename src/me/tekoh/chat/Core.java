@@ -2,6 +2,7 @@ package me.tekoh.chat;
 
 import me.tekoh.chat.API.ClearChat;
 import me.tekoh.chat.API.MuteChat;
+import me.tekoh.chat.Commands.ClearChatCommand;
 import me.tekoh.chat.Commands.MuteChatCommand;
 import me.tekoh.chat.Listeners.PlayerTalk;
 import org.bukkit.event.Listener;
@@ -37,6 +38,7 @@ public class Core extends JavaPlugin {
         muteChat.setMute(false);
         registerEvents(this, new PlayerTalk(this));
         getCommand("mutechat").setExecutor(new MuteChatCommand(this));
+        getCommand("clearchat").setExecutor(new ClearChatCommand(this));
         messageConsole("§aChat has successfully initialized..");
     }
 
