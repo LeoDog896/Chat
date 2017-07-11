@@ -37,6 +37,16 @@ public class ClearChatCommand implements CommandExecutor {
                 Bukkit.getServer().broadcastMessage(pl.getMessage("messages.clearchat.clearline").replaceAll("%player%", name(sender)));
                 return true;
             }
+            if (args.length > 1) {
+                sender.sendMessage(pl.getMessage("messages.toomanyargs"));
+                return true;
+            }
+            Player target = Bukkit.getPlayer(args[0]);
+            if (target == null) {
+                sender.sendMessage("§cError: Null target.");
+                return true;
+            }
+            pl.clearChat.clearChatPersonal(target);
         }
 
         return true;
