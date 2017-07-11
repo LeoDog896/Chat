@@ -15,13 +15,22 @@ public class ClearChat {
         pl = instance;
     }
 
-    int lines = pl.getInt("settings.clearchat.lines");
+    private int lines = 250;
 
     public void clearChat() {
         for (int i = 0; i < lines; i++) {
             for (Player player : Bukkit.getOnlinePlayers()) {
+                if (player.hasPermission("chat.clearchat.bypass")) {
+                    return;
+                }
                 player.sendMessage("§r");
             }
+        }
+    }
+
+    public void clearChatPersonal(Player p) {
+        for (int i = 0; i < lines; i++) {
+            p.sendMessage("§r");
         }
     }
 

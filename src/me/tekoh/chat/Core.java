@@ -26,10 +26,6 @@ public class Core extends JavaPlugin {
         return getConfig().getBoolean(position);
     }
 
-    public int getInt(String position) {
-        return getConfig().getInt(position);
-    }
-
     @Override
     public void onEnable() {
         this.muteChat = new MuteChat();

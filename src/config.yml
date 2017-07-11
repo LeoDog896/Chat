@@ -9,7 +9,3 @@ messages:
         chatismuted: '%prefix% &7Chat is currently &amuted&7!' #This is the message used when a player tries to type when the chat is muted.
         nolongermuted: '%prefix% &7Chat is no longer &amuted&7!' #This is the message used when the chat is no longer muted, it will be broadcasted to everyone.
         isnowmuted: '%prefix% &7Chat is now &amuted&7!' #This is the message used when the chat is now muted, it will be broadcasted to everyone.
-
-settings:
-    clearchat:
-        lines: 150
