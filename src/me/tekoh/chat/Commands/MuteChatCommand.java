@@ -28,11 +28,11 @@ public class MuteChatCommand implements CommandExecutor {
             if (args.length == 0) {
                 if (pl.muteChat.isMuted()) {
                     pl.muteChat.setMute(false);
-                    pl.broadcast(pl.getMessage("messages.nolongermuted"));
+                    pl.broadcast(pl.getMessage("messages.mutechat.nolongermuted"));
                     return true;
                 } else {
                     pl.muteChat.setMute(true);
-                    pl.broadcast(pl.getMessage("messages.isnowmuted"));
+                    pl.broadcast(pl.getMessage("messages.mutechat.isnowmuted"));
                     return true;
                 }
             }

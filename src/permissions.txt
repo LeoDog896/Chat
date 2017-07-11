@@ -1,2 +1,4 @@
 chat.mutechat.bypass // Bypass the muted chat.
-chat.mutechat.toggle // Turn the mutechat on/off
+chat.mutechat.toggle // Turn the mutechat on/off.
+
+chat.clearchat.global // Clear the global chat.

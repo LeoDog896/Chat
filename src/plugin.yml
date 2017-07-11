@@ -7,3 +7,6 @@ commands:
     mutechat:
         usage: /<command>
         description: Toggle whether or not the chat is muted.
+    clearchat:
+        usage: /<command>
+        description: Clear the chat.

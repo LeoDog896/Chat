@@ -23,7 +23,7 @@ public class PlayerTalk implements Listener {
                 return;
             }
             e.setCancelled(true);
-            e.getPlayer().sendMessage(pl.getMessage("messages.chatismuted"));
+            e.getPlayer().sendMessage(pl.getMessage("messages.mutechat.chatismuted"));
             pl.messageConsole(e.getPlayer().getName() + " attempted to send a message, but the chat is currently muted.");
         }
     }
