@@ -1,0 +1,9 @@
+name: Chat
+version: 0.1
+main: me.tekoh.chat.Core
+description: Just another Chat plugin
+
+commands:
+    mutechat:
+        usage: /<command>
+        description: Toggle whether or not the chat is muted.
