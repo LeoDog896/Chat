@@ -24,7 +24,7 @@ public class PlayerTalk implements Listener {
             }
             e.setCancelled(true);
             e.getPlayer().sendMessage(pl.getMessage("messages.chatismuted"));
-            pl.messageConsole(e.getPlayer() + " attempted to send a message, but the chat is currently muted.");
+            pl.messageConsole(e.getPlayer().getName() + " attempted to send a message, but the chat is currently muted.");
         }
     }
 

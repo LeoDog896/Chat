@@ -12,8 +12,8 @@ public class MuteChat {
         return mute;
     }
 
-    public void setMute(Boolean mute) {
-        mute = mute;
+    public void setMute(Boolean setmute) {
+        mute = setmute;
     }
 
 }

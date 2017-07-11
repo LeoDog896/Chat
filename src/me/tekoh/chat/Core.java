@@ -16,7 +16,7 @@ public class Core extends JavaPlugin {
     public MuteChat muteChat;
 
     public String getMessage(String position) {
-        return getConfig().getString(position).replaceAll("&", "§").replaceAll("%prefix%", getConfig().getString("messages.prefix"));
+        return getConfig().getString(position).replaceAll("&", "§").replaceAll("%prefix%", getConfig().getString("messages.prefix").replaceAll("&", "§"));
     }
 
     public boolean getBoolean(String position) {
