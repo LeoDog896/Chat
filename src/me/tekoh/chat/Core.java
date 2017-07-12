@@ -29,17 +29,6 @@ public class Core extends JavaPlugin {
     @Override
     public void onEnable() {
 
-        //Checking config version
-        if (getConfig().getInt("configversion") < 0.1) {
-            messageConsole("§c~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            messageConsole("§c[Chat] You must delete your config as the latest update has changed it.");
-            messageConsole("§c[Chat] We recommend backing up your old config to copy some settings back over");
-            messageConsole("§c~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            messageConsole("[Chat] Disabling..");
-            getServer().getPluginManager().disablePlugin(this);
-        }
-
-
         this.muteChat = new MuteChat();
         this.clearChat = new ClearChat(this);
         loadConfig();
@@ -48,11 +37,6 @@ public class Core extends JavaPlugin {
         getCommand("mutechat").setExecutor(new MuteChatCommand(this));
         getCommand("clearchat").setExecutor(new ClearChatCommand(this));
         messageConsole("§aChat has successfully initialized..");
-    }
-
-    @Override
-    public void onDisable() {
-        muteChat.setMute(false);
     }
 
     public void messageConsole(String message) {
