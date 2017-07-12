@@ -21,6 +21,10 @@ public class MuteChatCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args) {
 
         if (cmd.getName().equalsIgnoreCase("mutechat")) {
+            if (!pl.getBoolean("settings.enable.mutechat")) {
+                sender.sendMessage("§cMuteChat is disabled.");
+                return true;
+            }
             if (!sender.hasPermission("chat.mutechat.toggle")) {
                 sender.sendMessage(pl.getMessage("messages.noperms"));
                 return true;

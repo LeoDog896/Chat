@@ -22,6 +22,10 @@ public class ClearChatCommand implements CommandExecutor {
 
         if (cmd.getName().equalsIgnoreCase("clearchat")) {
             if (args.length == 0) {
+                if (!pl.getBoolean("settings.enable.clearchat")) {
+                    sender.sendMessage("§cClearChat is disabled.");
+                    return true;
+                }
                 if (!sender.hasPermission("chat.clearchat.global")) {
                     sender.sendMessage(pl.getMessage("messages.noperms"));
                     return true;
