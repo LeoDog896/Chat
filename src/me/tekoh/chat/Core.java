@@ -5,6 +5,7 @@ import me.tekoh.chat.API.MuteChat;
 import me.tekoh.chat.Commands.ClearChatCommand;
 import me.tekoh.chat.Commands.MuteChatCommand;
 import me.tekoh.chat.Listeners.PlayerTalk;
+import me.tekoh.chat.Listeners.PreCommand;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -28,14 +29,18 @@ public class Core extends JavaPlugin {
 
     @Override
     public void onEnable() {
-
         this.muteChat = new MuteChat();
         this.clearChat = new ClearChat(this);
+
         loadConfig();
+
         muteChat.setMute(false);
-        registerEvents(this, new PlayerTalk(this));
+
+        registerEvents(new PlayerTalk(this), new PreCommand(this));
+
         getCommand("mutechat").setExecutor(new MuteChatCommand(this));
         getCommand("clearchat").setExecutor(new ClearChatCommand(this));
+
         messageConsole("§aChat has successfully initialized..");
     }
 
@@ -43,13 +48,13 @@ public class Core extends JavaPlugin {
         getServer().getConsoleSender().sendMessage("[Chat] " + message);
     }
 
-    private void registerEvents(Plugin plugin, Listener... listeners) {
+    private void registerEvents(Listener... listeners) {
         for (Listener listener : listeners) {
             getServer().getPluginManager().registerEvents(listener, this);
         }
     }
 
-    public void loadConfig() {
+    private void loadConfig() {
         getConfig().options().copyDefaults(true);
         saveConfig();
     }

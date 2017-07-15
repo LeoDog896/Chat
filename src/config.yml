@@ -13,8 +13,37 @@ messages:
         nolongermuted: '%prefix% &7Chat is no longer &amuted&7!' #This is the message used when the chat is no longer muted, it will be broadcasted to everyone.
         isnowmuted: '%prefix% &7Chat is now &amuted&7!' #This is the message used when the chat is now muted, it will be broadcasted to everyone.
 
+    commandblock:
+        nocolons: '%prefix% &cYou cannot use colons in commands.' #This message is used when a player attempts to use a command that has colons. For e.g "/essentials:me"
+        blockedcommand: '%prefix% &cThat command is blocked'
+
 settings:
     enable:
         clearchat: true
         mutechat: true
         urlblock: true
+        commandblock: true
+
+
+    mutechat:
+        blockedcommands:
+                - me
+                - say
+
+
+    commandblock:
+        blockcolons: true #Should we block the use of ":" in commands? "chat.commandblock.bypass" bypasses this.
+
+        useperworld: false #If set to true, you must set block commands for all worlds, or we will just use the blocked commands in "world". If false, add all blocked commands to "blockedcommands"
+
+        blockedcommands: #This only works if "useperworld" is false.
+            #- fly
+            #- gamemode
+
+        world: #This only works if "userperworld" is true.
+            #- fly
+            #- gamemode
+
+        exampleworld:
+            #- fly
+            #- gamemode
