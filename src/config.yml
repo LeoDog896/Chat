@@ -34,7 +34,7 @@ settings:
     commandblock:
         blockcolons: true #Should we block the use of ":" in commands? "chat.commandblock.bypass" bypasses this.
 #
-        useperworld: false #If set to true, you must set block commands for all worlds, or we will just use the blocked commands in "world". If false, add all blocked commands to "blockedcommands"
+        useperworld: false #If set to true, you must set block commands for all worlds. If false, add all blocked commands to "blockedcommands"
 #
         blockedcommands: #This only works if "useperworld" is false.
             #- fly

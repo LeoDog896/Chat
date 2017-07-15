@@ -1,7 +1,9 @@
 package me.tekoh.chat;
 
 import me.tekoh.chat.API.ClearChat;
+import me.tekoh.chat.API.Logger;
 import me.tekoh.chat.API.MuteChat;
+import me.tekoh.chat.Commands.ChatCommand;
 import me.tekoh.chat.Commands.ClearChatCommand;
 import me.tekoh.chat.Commands.MuteChatCommand;
 import me.tekoh.chat.Listeners.PlayerTalk;
@@ -17,6 +19,7 @@ public class Core extends JavaPlugin {
 
     public MuteChat muteChat;
     public ClearChat clearChat;
+    public Logger logger;
 
     public String getMessage(String position) {
         return getConfig().getString(position).replaceAll("&", "§").replaceAll("%prefix%", getConfig().getString("messages.prefix").replaceAll("&", "§"));
@@ -30,6 +33,7 @@ public class Core extends JavaPlugin {
     public void onEnable() {
         this.muteChat = new MuteChat();
         this.clearChat = new ClearChat(this);
+        this.logger = new Logger();
 
         loadConfig();
 
@@ -39,12 +43,9 @@ public class Core extends JavaPlugin {
 
         getCommand("mutechat").setExecutor(new MuteChatCommand(this));
         getCommand("clearchat").setExecutor(new ClearChatCommand(this));
+        getCommand("chat").setExecutor(new ChatCommand(this));
 
-        messageConsole("§aChat has successfully initialized..");
-    }
-
-    public void messageConsole(String message) {
-        getServer().getConsoleSender().sendMessage("[Chat] " + message);
+        logger.log("Chat has successfully initialized..");
     }
 
     private void registerEvents(Listener... listeners) {
@@ -53,7 +54,7 @@ public class Core extends JavaPlugin {
         }
     }
 
-    private void loadConfig() {
+    public void loadConfig() {
         saveDefaultConfig();
     }
 

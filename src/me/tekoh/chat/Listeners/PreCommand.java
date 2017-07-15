@@ -41,6 +41,11 @@ public class PreCommand implements Listener {
 
     @EventHandler
     public void blockCommand(PlayerCommandPreprocessEvent e) {
+
+        if (!pl.getBoolean("settings.enable.commandblock")) {
+            return;
+        }
+
         if (e.getPlayer().hasPermission("chat.commandblock.bypass")) {
             return;
         }
@@ -49,6 +54,7 @@ public class PreCommand implements Listener {
             if (e.getMessage().contains(":")) {
                 e.setCancelled(true);
                 e.getPlayer().sendMessage(pl.getMessage("messages.commandblock.nocolons"));
+                pl.logger.log(e.getPlayer().getName() + " tried to use the command " + e.getMessage());
                 return;
             }
         }
@@ -60,10 +66,26 @@ public class PreCommand implements Listener {
                 if (e.getMessage().toLowerCase().startsWith("/" + command)) {
                     e.setCancelled(true);
                     e.getPlayer().sendMessage(pl.getMessage("messages.commandblock.blockedcommand"));
+                    pl.logger.log(e.getPlayer().getName() + " tried to use the command " + e.getMessage());
                     return;
                 }
             }
+        } else {
+            if (pl.getConfig().getStringList("settings.commandblock." + e.getPlayer().getWorld().toString().toLowerCase()) == null) {
+                pl.logger.error("The world '" + e.getPlayer().getWorld().toString().toLowerCase() + "' doesn't exist in the config");
+                return;
+            }
 
+            List<String> cmds = pl.getConfig().getStringList("settings.commandblock." + e.getPlayer().getWorld().toString().toLowerCase());
+
+            for (String command : cmds) {
+                if (e.getMessage().toLowerCase().startsWith("/" + command)) {
+                    e.setCancelled(true);
+                    e.getPlayer().sendMessage(pl.getMessage("messages.commandblock.blockedcommand"));
+                    pl.logger.log(e.getPlayer().getName() + " tried to use the command " + e.getMessage());
+                    return;
+                }
+            }
         }
 
     }

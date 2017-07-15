@@ -39,7 +39,7 @@ public class PlayerTalk implements Listener {
             }
             e.setCancelled(true);
             e.getPlayer().sendMessage(pl.getMessage("messages.urlblocked"));
-            pl.messageConsole(pl.getMessage("messages.prefix") + " §a" + e.getPlayer().getName() + " §7tried to type: §c" + message);
+            pl.logger.log(pl.getMessage("messages.prefix") + " §a" + e.getPlayer().getName() + " §7tried to type: §c" + message);
             for (Player player : Bukkit.getOnlinePlayers()) {
                 if (player.hasPermission("chat.urlblock.notify")) {
                     player.sendMessage(pl.getMessage("messages.prefix") + " §a" + e.getPlayer().getName() + " §7tried to type: §c" + message);
@@ -54,7 +54,7 @@ public class PlayerTalk implements Listener {
             }
             e.setCancelled(true);
             e.getPlayer().sendMessage(pl.getMessage("messages.mutechat.chatismuted"));
-            pl.messageConsole(e.getPlayer().getName() + " attempted to send a message, but the chat is currently muted.");
+            pl.logger.log(e.getPlayer().getName() + " attempted to send a message, but the chat is currently muted.");
         }
 
 
