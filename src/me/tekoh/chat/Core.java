@@ -45,7 +45,7 @@ public class Core extends JavaPlugin {
         getCommand("clearchat").setExecutor(new ClearChatCommand(this));
         getCommand("chat").setExecutor(new ChatCommand(this));
 
-        logger.log("Chat has successfully initialized..");
+        logger.log("Successfully initialized..");
     }
 
     private void registerEvents(Listener... listeners) {

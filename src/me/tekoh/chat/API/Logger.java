@@ -11,11 +11,11 @@ import java.util.logging.Level;
 public class Logger {
 
     public void log(String message) {
-        Bukkit.getLogger().log(Level.INFO, "§a[Chat] " + message);
+        Bukkit.getConsoleSender().sendMessage("§a[Chat] " + message);
     }
 
     public void error(String message) {
-        Bukkit.getLogger().log(Level.SEVERE, "§c[Chat] " + message);
+        Bukkit.getConsoleSender().sendMessage("§c[Chat] ERROR: " + message);
     }
 
 }

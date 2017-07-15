@@ -9,3 +9,5 @@ chat.urlblock.bypass // Bypass the url block.
 chat.urlblock.notify // Notifies this player when a player types a url.
 
 chat.commandblock.bypass // Bypass commandblock
+
+chat.reload // Reload the config

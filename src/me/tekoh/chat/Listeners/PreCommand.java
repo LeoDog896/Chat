@@ -71,12 +71,12 @@ public class PreCommand implements Listener {
                 }
             }
         } else {
-            if (pl.getConfig().getStringList("settings.commandblock." + e.getPlayer().getWorld().toString().toLowerCase()) == null) {
-                pl.logger.error("The world '" + e.getPlayer().getWorld().toString().toLowerCase() + "' doesn't exist in the config");
+            if (pl.getConfig().getStringList("settings.commandblock." + e.getPlayer().getWorld().getName().toLowerCase()) == null) {
+                pl.logger.error("The world '" + e.getPlayer().getWorld().getName().toLowerCase() + "' doesn't exist in the config");
                 return;
             }
 
-            List<String> cmds = pl.getConfig().getStringList("settings.commandblock." + e.getPlayer().getWorld().toString().toLowerCase());
+            List<String> cmds = pl.getConfig().getStringList("settings.commandblock." + e.getPlayer().getWorld().getName().toLowerCase());
 
             for (String command : cmds) {
                 if (e.getMessage().toLowerCase().startsWith("/" + command)) {

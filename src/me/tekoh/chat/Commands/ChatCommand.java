@@ -32,6 +32,10 @@ public class ChatCommand implements CommandExecutor {
                 return true;
             }
             pl.loadConfig();
+            pl.reloadConfig();
+            sender.sendMessage("§a§lconfig.yml reloaded");
+            pl.logger.log("config.yml reloaded");
+            return true;
         }
 
         return true;
