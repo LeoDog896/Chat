@@ -7,7 +7,6 @@ import me.tekoh.chat.Commands.MuteChatCommand;
 import me.tekoh.chat.Listeners.PlayerTalk;
 import me.tekoh.chat.Listeners.PreCommand;
 import org.bukkit.event.Listener;
-import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 /**
@@ -55,8 +54,7 @@ public class Core extends JavaPlugin {
     }
 
     private void loadConfig() {
-        getConfig().options().copyDefaults(true);
-        saveConfig();
+        saveDefaultConfig();
     }
 
     public void broadcast(String message) {

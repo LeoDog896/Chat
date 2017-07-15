@@ -53,11 +53,11 @@ public class PreCommand implements Listener {
             }
         }
 
-        if (pl.getBoolean("settings.commandblock.useperworld")) {
+        if (!pl.getBoolean("settings.commandblock.useperworld")) {
             List<String> cmds = pl.getConfig().getStringList("settings.commandblock.blockedcommands");
 
             for (String command : cmds) {
-                if (e.getMessage().toLowerCase().startsWith(command)) {
+                if (e.getMessage().toLowerCase().startsWith("/" + command)) {
                     e.setCancelled(true);
                     e.getPlayer().sendMessage(pl.getMessage("messages.commandblock.blockedcommand"));
                     return;
