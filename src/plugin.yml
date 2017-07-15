@@ -13,3 +13,7 @@ commands:
         usage: /<command>
         description: Clear the chat.
         aliases: [cc, clearc, cchat]
+
+    chat:
+        usage: /<command>
+        description: Reload the config
